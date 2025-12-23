@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Llistes</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <nav id="menu" class="menu hidden">
+    <a href="./pokemons.html">Pokémons</a>
+    <a href="./listas.html">Llistes (Equip: <span id="teamCount">0</span> | Desitjos: <span id="wishCount">0</span>)</a>
+    <span class="spacer"></span>
+    <div class="userbox">
+      <span id="menuUser"></span>
+      <button id="btnLogout">Logout</button>
+    </div>
+  </nav>
+
+  <main class="container">
+    <h1>Llistes</h1>
+
+    <div class="row">
+      <button id="btnTeam">Veure equip</button>
+      <button id="btnWish">Veure desitjos</button>
+      <span class="spacer"></span>
+      <strong id="currentList"></strong>
+    </div>
+
+    <section id="listContainer" class="card"></section>
+  </main>
+
+  <script type="module" src="../js/listas.js"></script>
+</body>
+</html>
