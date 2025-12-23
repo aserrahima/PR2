@@ -1,4 +1,4 @@
-// js/config.js
+// PART1: js/config.js
 export const API_BASE = "https://pokeapi.co/api/v2";
 export const POKEMON_LIMIT = 151;     // 1a generació
 export const PAGE_SIZE = 20;          // quants es mostren per "Load more"
