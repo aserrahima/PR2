@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Registre</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Registre d'usuari</h1>
+
+    <form id="registerForm" class="card">
+      <label>Nom</label>
+      <input id="nombre" type="text" />
+
+      <label>Cognoms</label>
+      <input id="apellidos" type="text" />
+
+      <label>Adreça</label>
+      <input id="direccion" type="text" />
+
+      <label>Població</label>
+      <select id="poblacion"></select>
+
+      <label>Codi Postal</label>
+      <input id="cp" type="text" />
+
+      <label>Email</label>
+      <input id="email" type="text" placeholder="nom@domini.com" />
+
+      <label>Usuari</label>
+      <input id="username" type="text" />
+
+      <label>Contrasenya</label>
+      <input id="password" type="password" />
+
+      <div class="row">
+        <button type="submit">Guardar</button>
+        <button type="button" id="btnBack">Tornar</button>
+      </div>
+    </form>
+  </main>
+
+  <script type="module" src="../js/registro.js"></script>
+</body>
+</html>
