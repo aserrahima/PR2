@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Detall Pokémon</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <nav id="menu" class="menu hidden">
+    <a href="./pokemons.html">Pokémons</a>
+    <a href="./listas.html">Llistes (Equip: <span id="teamCount">0</span> | Desitjos: <span id="wishCount">0</span>)</a>
+    <span class="spacer"></span>
+    <div class="userbox">
+      <span id="menuUser"></span>
+      <button id="btnLogout">Logout</button>
+    </div>
+  </nav>
+
+  <main class="container">
+    <button id="btnBack">← Tornar</button>
+
+    <h1 id="title"></h1>
+
+    <div class="detail">
+      <img id="img" class="detail-img" alt="pokemon" />
+      <div>
+        <p id="desc"></p>
+
+        <ul id="meta"></ul>
+
+        <h3>Estadístiques</h3>
+        <ul id="stats"></ul>
+
+        <div class="row">
+          <button id="btnTeam">Afegir a l'equip</button>
+          <button id="btnWish">Afegir a desitjos</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script type="module" src="../js/detail.js"></script>
+</body>
+</html>
