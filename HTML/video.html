@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vídeo</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <nav id="menu" class="menu hidden">
+    <a href="./pokemons.html">Pokémons</a>
+
+    <a href="./listas.html">
+      Llistes (Equip: <span id="teamCount">0</span> | Desitjos: <span id="wishCount">0</span>)
+    </a>
+
+    <a href="./video.html">Vídeo</a>
+
+    <span class="spacer"></span>
+    <div class="userbox">
+      <span id="menuUser"></span>
+      <button id="btnLogout">Logout</button>
+    </div>
+  </nav>
+
+  <main class="container">
+    <h1>Vídeo (dificultats i com les hem afrontat)</h1>
+
+    <section class="card">
+      <video controls preload="metadata" style="width:100%; max-width:900px; border-radius:10px;">
+        <source src="../video/dificultats.mp4" type="video/mp4" />
+        El teu navegador no suporta el vídeo.
+      </video>
+
+      <p class="muted" style="margin-top:10px;">
+        Durada màx. 5 minuts · Màx. 100MB · Format .mp4
+      </p>
+    </section>
+  </main>
+
+  <script type="module" src="../js/video.js"></script>
+</body>
+</html>
