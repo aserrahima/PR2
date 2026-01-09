@@ -1,6 +1,7 @@
 import { requireAuthOrRedirect, getSession, getLists, saveLists } from "./storage.js";
 import { getPokemonsCached } from "./api.js";
 import { initMenu, updateMenuCounts } from "./menu.js";
+import { findPokemonById } from "./utils_pr1.js";
 
 function fmtId(id) {
   return "#" + String(id).padStart(3, "0");
@@ -62,7 +63,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   const id = getIdFromURL();
   const all = await getPokemonsCached();
-  const p = all.find(x => x.id === id);
+  const p = findPokemonById(all, id); //PART útil de la PR1 unificada
 
   if (!p) {
     alert("Pokemon no trobat.");
