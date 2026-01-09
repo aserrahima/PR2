@@ -1,4 +1,4 @@
-/* css/styles.css */
+// css/styles.css 
 * { box-sizing: border-box; font-family: system-ui, Arial, sans-serif; }
 body { margin: 0; background: #f6f7fb; color: #111; }
 .container { max-width: 1000px; margin: 0 auto; padding: 16px; }
