@@ -208,36 +208,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   document.querySelector("#btnMore").addEventListener("click", () => render());
 
-//PART de la PR1 útil:
-  const extraInfo = document.querySelector("#extraInfo");
 
-  document.querySelector("#btnCommonType").addEventListener("click", () => {
-    const t = getMostCommonType(FILTERED);
-    extraInfo.textContent = t
-      ? `Tipus més comú en els resultats actuals: ${t}`
-      : "No hi ha dades per calcular el tipus més comú.";
-  });
-
-  document.querySelector("#btnStrong").addEventListener("click", () => {
-    const minAtk = document.querySelector("#minAttack").value;
-
-    if (!minAtk) {
-      extraInfo.textContent = "Introdueix un attack mínim (ex: 80).";
-      return;
-    }
-
-    const strong = getStrongPokemons(FILTERED, minAtk);
-
-    if (strong.length === 0) {
-      extraInfo.textContent = `No hi ha pokémons amb attack >= ${minAtk}.`;
-      return;
-    }
-
-    const names = strong.slice(0, 12).map(p => p.name).join(", ");
-    extraInfo.textContent =
-      `Pokémons forts (attack >= ${minAtk}): ${strong.length}. ` +
-      `Exemples: ${names}${strong.length > 12 ? "..." : ""}`;
-  });
 
   
 });
